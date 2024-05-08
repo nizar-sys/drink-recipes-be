@@ -18,8 +18,8 @@ return new class extends Migration
             $table->foreignId('category_id')->constrained('categories')->onDelete('cascade')->onUpdate('cascade');
             $table->string('name');
             $table->string('ingredient');
-            $table->string('step');
-            $table->string('image');
+            $table->longText('step');
+            $table->string('image')->nullable()->default('avatar.png');
             $table->string('purchase_link');
             $table->integer('total_view')->default(0);
             $table->timestamps();

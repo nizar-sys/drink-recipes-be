@@ -81,7 +81,7 @@ class DrinkRecipeController extends Controller
     {
         $ingredients = explode(', ', $recipe->ingredient);
 
-        $resepRecommendation = DrinkRecipe::select('id', 'name', 'category_id', 'total_view', 'ingredient', 'image')
+        $resepRecommendation = DrinkRecipe::select('id', 'name', 'category_id', 'total_view', 'ingredient', 'purchase_link')
             ->where('id', '!=', $recipe->id)
             ->where(function ($query) use ($ingredients) {
                 foreach ($ingredients as $ingredient) {

@@ -24,7 +24,6 @@
                                     <th>No</th>
                                     <th>Kategori</th>
                                     <th>Nama Minuman</th>
-                                    <th>Gambar</th>
                                     <th>Bahan-bahan</th>
                                     <th>Langkah Pembuatan</th>
                                     <th>Link Pembelian</th>
@@ -38,9 +37,6 @@
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $recipe->category->name }}</td>
                                         <td>{{ $recipe->name }}</td>
-                                        <td>
-                                            <img src="{{ asset('/uploads/images/'.$recipe->image) }}" alt="{{ $recipe->name }}" width="100">
-                                        </td>
                                         <td>{{ $recipe->ingredient }}</td>
                                         <td>{{ $recipe->step }}</td>
                                         <td>{{ $recipe->purchase_link }}</td>

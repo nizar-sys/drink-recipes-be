@@ -131,7 +131,7 @@
                         <div class="form-group mb-3">
                             <label for="image">Gambar</label>
                             <input type="file" class="form-control @error('image') is-invalid @enderror" id="image"
-                                placeholder="Gambar Resep Minuman" name="image" required>
+                                placeholder="Gambar Resep Minuman" name="image">
 
                             @error('image')
                                 <div class="d-block invalid-feedback">{{ $message }}</div>

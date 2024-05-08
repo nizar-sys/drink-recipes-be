@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
-        Category::factory(10)->create();
+        // Category::factory(10)->create();.
         // DrinkRecipe::factory(10)->create();
         // CommentRecipe::factory(1)->create();
     }

@@ -32,7 +32,7 @@ class RequestStoreDrinkRecipe extends FormRequest
         ];
 
         if ($this->getMethod() === 'POST') {
-            $rules['image'] = 'required|image';
+            $rules['image'] = 'nullable|image';
         }
 
         return $rules;
